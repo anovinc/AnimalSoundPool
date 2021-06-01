@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageButton
+        android:id="@+id/ib_dog"
+        android:background="#ffffff"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/ib_cow"
+        app:layout_constraintEnd_toStartOf="@id/ib_cat"
+        android:layout_width="150dp"
+        android:src="@drawable/dog"
+        android:scaleType="fitCenter"
+        android:layout_height="150dp" />
+
+    <ImageButton
+        android:id="@+id/ib_cat"
+        android:background="#ffffff"
+        app:layout_constraintBottom_toTopOf="@id/ib_gorila"
+        app:layout_constraintStart_toEndOf="@id/ib_dog"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="150dp"
+        android:src="@drawable/cat"
+        android:scaleType="fitCenter"
+        android:layout_height="150dp" />
+    <ImageButton
+        android:id="@+id/ib_cow"
+        android:background="#ffffff"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/ib_cat"
+        android:layout_width="150dp"
+        android:src="@drawable/cow"
+        android:scaleType="fitCenter"
+        android:layout_height="150dp" />
+
+    <ImageButton
+        android:id="@+id/ib_gorila"
+        android:background="#ffffff"
+        app:layout_constraintStart_toEndOf="@id/ib_cow"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="150dp"
+        android:src="@drawable/gorila"
+        android:scaleType="fitCenter"
+        android:layout_height="150dp" />
+    <ImageButton
+        android:id="@+id/ib_cock"
+        android:background="#ffffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ib_cow"
+        app:layout_constraintEnd_toStartOf="@id/ib_cat"
+        android:layout_width="150dp"
+        android:src="@drawable/cock"
+        android:scaleType="fitCenter"
+        android:layout_height="150dp" />
+
+    <ImageButton
+        android:id="@+id/ib_sheep"
+        android:background="#ffffff"
+        app:layout_constraintStart_toEndOf="@id/ib_cock"
+        app:layout_constraintTop_toBottomOf="@id/ib_gorila"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="150dp"
+        android:src="@drawable/sheep"
+        android:scaleType="fitCenter"
+        android:layout_height="150dp" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
